@@ -1,0 +1,17 @@
+{
+  "validLogin": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  }
+,
+
+  "invalidLogin": {
+    "username": "standard_uer",
+    "password": "secret"
+  }
+,
+  "invalidLoginWithoutPassword": {
+    "username": "standard_user",
+    "password": ""
+  }
+}
