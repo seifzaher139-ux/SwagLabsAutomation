@@ -31,11 +31,11 @@ public class LoginTest extends BaseTest {
     }
     @Test
     public void invalidLoginTestWithoutPassword(){
-        String username3= DataDriven.jsonReader("invalidLoginWithoutPassword", "username");
+        String username1= DataDriven.jsonReader("invalidLoginWithoutPassword", "username");
         String password2 = DataDriven.jsonReader("invalidLoginWithoutPassword", "password");
         LoginPage loginPage =new LoginPage(driver);
         loginPage.enterPassword(password2);
-        loginPage.enterUserName(username3);
+        loginPage.enterUserName(username1);
         loginPage.clickLogin();
         Assert.assertTrue(loginPage.getTextInvalidLogin().contains("Password is required"));
     }
